@@ -41,6 +41,7 @@ try {
   }
 } finally {
   if (pipelineContext != null) {
-    pipelineContext.getEmailer().sendEmail(this, result, pipelineContext.getBuildSummary().getSummaryHTML(this))
+// FIXME uncomment
+//    pipelineContext.getEmailer().sendEmail(this, result, pipelineContext.getBuildSummary().getSummaryHTML(this))
   }
 }
